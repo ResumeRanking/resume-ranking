@@ -1,0 +1,24 @@
+We are looking for a highly capable database manager to enhance the performance of our organization's database. You will be creating and implementing standardized database management procedures, and overseeing the installation, security, and upgrading of our database.
+
+To ensure success as a database manager, you should possess extensive knowledge of database architecture and experience in a similar role. An outstanding database manager will be someone whose database management expertise translates into optimal database performance.
+
+Database Manager Responsibilities:
+Enhancing the scalability and performance of existing database architecture.
+Developing database structures and features according to organizational needs.
+Hiring, supervising, and mentoring database development teams.
+Protecting data by developing data security and restoration policies, procedures, and controls.
+Conducting diagnostic tests and evaluating performance metrics.
+Developing procedures to ensure data integrity and quality.
+Preparing and presenting system performance reports to senior managers.
+Performing database maintenance, migration, and upgrading hardware and software.
+Documenting processes and complying with best practices in database management.
+Keeping up to date with developments and trends in database management.
+Database Manager Requirements:
+Bachelor's degree in management information systems (MIS), computer science, information systems, or information technology.
+At least 2 years of experience in database management.
+Advanced proficiency in Structured Query Language (SQL).
+In-depth knowledge of database technologies, architecture, and data security.
+Knowledge of best practices in database management.
+Advanced analytical, leadership, and problem-solving skills.
+Exceptional organizational skills and attention to detail.
+Excellent interpersonal and communication skills.

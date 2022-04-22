@@ -117,7 +117,7 @@ def res(jobfile):
     Job_Desc = 0
     LIST_OF_TXT_FILES = []
     os.chdir(
-        '/Users/Brijesh/Desktop/Nidhi/Automated-Resume-Ranking-System-master/Job_Description')
+        '/Users/Brijesh/Desktop/Nidhi/Resume-Ranking/Job_Description')
     f = open(jobfile, 'rt')
     text = f.read()
 
@@ -158,17 +158,28 @@ def res(jobfile):
     for i in Resume_Vector:
 
         samples = i
-        neigh = NearestNeighbors(n_neighbors=1)
+        neigh = NearestNeighbors(n_neighbors=1, metric="cosine")
         neigh.fit(samples)
         NearestNeighbors(algorithm='auto', leaf_size=30)
 
         Ordered_list_Resume_Score.extend(
             neigh.kneighbors(Job_Desc)[0][0].tolist())
-
+    listy = []
+    for x in Ordered_list_Resume_Score:
+        listy.append(str((1-x)*100)+"%")
     Z = [x for _, x in sorted(
         zip(Ordered_list_Resume_Score, Ordered_list_Resume))]
+    print()
+    print()
     print(Ordered_list_Resume)
+    print()
+    print()
     print(Ordered_list_Resume_Score)
+
+    print()
+    print()
+    print(listy)
+
     flask_return = []
     # for n,i in enumerate(Z):
     #     print("Rankkkkk\t" , n+1, ":\t" , i)
@@ -183,7 +194,7 @@ def res(jobfile):
         flask_return.append(res)
         # res.printresult()
         print(f"Rank{res.rank} :\t {res.filename}")
-        print("Nicely done.......................flag3!!!!!!!!!!!!!!")
+    print("Nicely done.......................flag3!!!!!!!!!!!!!!")
     return flask_return
 
 
